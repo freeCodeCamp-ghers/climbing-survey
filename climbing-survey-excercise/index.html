@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climbing Madrid</title>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Form for rock climbing enthusiasts in Madrid</h1>
+        <p id="description">Thanks for taking the time to answer a few questions about our sport in our city!</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label><br>
+            <input id="name" type="text" placeholder="Insert your name" required><br>
+            <label for="email" id="email-label">Email</label><br>
+            <input id="email" type="email" placeholder="Insert your email" required><br>
+            <label for="number" id="number-label">Climbing experience (years)</label><br>
+            <input id="number" type="number" min=1 max=10 placeholder=99 required><br>
+            <label for="dropdown" id="dropdown-label">Preferred modality</label><br>
+            <select name="dropdown" id="dropdown">
+                <option disabled hidden selected>Select an option</option>
+                <option value="boulder">Boulder</option>
+                <option value="big-wall">Big wall</option>
+                <option value="classic-climbing">Classic climbing</option>
+                <option value="free-solo">Free solo</option>
+                <option value="deep-water">Deep water</option>
+            </select><br>
+            <p>Would you be open to take part in our climbing trips?</p>
+            <label for="yes">
+                <input id="yes" value="yes" type="radio" name="yes-no">Yes
+            </label><br>
+            <label for="no">
+                <input id="no" value="no" type="radio" name="yes-no">No
+            </label><br>
+            <p>Please select the climbing gyms that you have visited before:</p>
+            <label for="sharma-climbing">
+                <input id="sharma-climbing" value="sharma-climbing" type="checkbox" name="gyms">Sharma Climbing
+            </label><br>
+            <label for="sputnik">
+                <input id="sputnik" value="sputnik" type="checkbox" name="gyms">Sputnik
+            </label><br>
+            <label for="boulder-zone-retiro">
+                <input id="boulder-zone-retiro" value="boulder-zone-retiro" type="checkbox" name="gyms">Boulder Zone
+                Retiro
+            </label><br>
+            <label for="x-madrid">
+                <input id="x-madrid" value="x-madrid" type="checkbox" name="gyms">X-Madrid
+            </label><br>
+            <label for="other">
+                <input id="other" value="other" type="checkbox" name="gyms">Other
+            </label><br>
+            <label for="comments" id="comments-label">Any comments?</label><br>
+            <textarea id="comments" rows="5" cols="55" placeholder="Enter your comments here" required></textarea><br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
